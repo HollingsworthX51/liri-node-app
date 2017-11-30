@@ -119,13 +119,10 @@ function doWhatItSays() {
 			var dataArr = data.split(",");
 			// console.log(dataArr);
 			switch (dataArr[0]) {
-				case "my-tweets":
-					myTweets();
-					break;
 				case "spotify-this-song":
 					var songName = dataArr[1];
 					songName = songName.substring(1, songName.length - 1);
-					getSongDetails(songName);
+					spotifyThisSong(songName);
 					break;
 			}
 		}
